@@ -1,10 +1,9 @@
 jobs:
-  build_and_test:
-    executor: node/default
+  build_and_test:    
     steps:
       - checkout
       - node/install-packages:
           pkg-manager: npm
       - run:
-          command: npm run test
+          command: npm test
           name: Run tests
