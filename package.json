@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Fake Tests\" && exit 0"
+    "test": "tape ./test/**/*.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,10 @@
   "homepage": "https://github.com/mihaiolteanu/distnode-deploy#readme",
   "dependencies": {
     "fastify": "3.2"
+  },
+  "devDependencies": {
+    "node-fetch": "2.6",
+    "nyc": "^15.1.0",
+    "tape": "^5.6.3"
   }
 }
