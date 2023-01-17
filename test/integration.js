@@ -8,7 +8,7 @@ import fetch from "node-fetch";
 const serverStart = () => {
   return new Promise((resolve, _reject) => {
     const server = spawn("node", ["./server.js"], {
-      env: Object.assign({}, process.env, { PORT: 0 }),
+      env: Object.assign({}, process.env, { PORT: 5555 }),
       cwd: cwd(),
     });
     server.stdout.on("data", async (data) => {
